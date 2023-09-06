@@ -1,0 +1,35 @@
+function setup() {
+  createCanvas(innerWidth, innerHeight);
+  background(226, 229, 226);
+  rectMode(CENTER);
+}
+
+function draw() {
+  translate(width / 2, height / 2);
+  noStroke();
+  fill(125, 36, 0);
+
+  //   outer and inner radii of the star
+  let outerRadius = 100;
+  let innerRadius = 40;
+
+  // Number of points in the star
+  let numPoints = 5;
+
+  // Angle between each point
+  let angle = TWO_PI / numPoints;
+
+  beginShape();
+  for (let i = 0; i < TWO_PI; i += angle) {
+    // Outer point
+    let x1 = outerRadius * cos(i);
+    let y1 = outerRadius * sin(i);
+    vertex(x1, y1);
+
+    // Inner point
+    let x2 = innerRadius * cos(i + angle / 2);
+    let y2 = innerRadius * sin(i + angle / 2);
+    vertex(x2, y2);
+  }
+  endShape(CLOSE);
+}
