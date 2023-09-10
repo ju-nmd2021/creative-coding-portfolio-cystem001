@@ -8,12 +8,12 @@ function draw() {
   // Drawing multiple stars at random positions on the canvas
   push();
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 10; i++) {
     let x = random(width);
     let y = random(height);
-    let outerRadius = random(30, 100);
-    let innerRadius = random(10, 40);
-    let numPoints = int(random(4, 9, 12, 16));
+    let outerRadius = random(20, 80);
+    let innerRadius = random(10, 20);
+    let numPoints = int(random(4, 8, 12, 16));
     let fillColor = color(random(255), random(255), random(255));
 
     Star(x, y, outerRadius, innerRadius, numPoints, fillColor);

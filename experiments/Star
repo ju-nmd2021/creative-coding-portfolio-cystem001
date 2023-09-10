@@ -1,35 +1,45 @@
+let t = 0.0; // Initialize a time variable for Perlin noise
+
 function setup() {
   createCanvas(innerWidth, innerHeight);
   background(226, 229, 226);
   rectMode(CENTER);
+  noLoop();
+}
+function draw() {
+  for (let i = 0; i < 16900; i++) {
+    let x = map(noise(t), 0, 1, 150, width - 150); // Use Perlin noise for x-coordinate within the 300x300 square
+    let y = map(noise(t + 1000), 0, 1, 150, height - 150); // Use different noise seed for y-coordinate within the 300x300 square
+    let outerRadius = random(10, 50);
+    let innerRadius = random(5, 20);
+    let numPoints = int(random(5, 12));
+    let fillColor = color(random(255), random(255), random(255));
+
+    Star(x, y, outerRadius, innerRadius, numPoints, fillColor);
+
+    t += 0.07; // Increase time variable for each star
+  }
 }
 
-function draw() {
-  translate(width / 2, height / 2);
-  noStroke();
-  fill(125, 36, 0);
+// Draws the star when called
+function Star(x, y, outerRadius, innerRadius, numPoints, fillColor) {
+  push();
+  translate(x, y);
+  fill(fillColor);
 
-  //   outer and inner radii of the star
-  let outerRadius = 100;
-  let innerRadius = 40;
-
-  // Number of points in the star
-  let numPoints = 5;
-
-  // Angle between each point
   let angle = TWO_PI / numPoints;
 
   beginShape();
   for (let i = 0; i < TWO_PI; i += angle) {
-    // Outer point
     let x1 = outerRadius * cos(i);
     let y1 = outerRadius * sin(i);
     vertex(x1, y1);
 
-    // Inner point
     let x2 = innerRadius * cos(i + angle / 2);
     let y2 = innerRadius * sin(i + angle / 2);
     vertex(x2, y2);
   }
   endShape(CLOSE);
+
+  pop();
 }
