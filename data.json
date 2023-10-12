@@ -2,7 +2,7 @@
   {
     "file": "experiments/randomStrokes.js",
     "name": "Static Generative Art",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "description": "My first try at generative art",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/cystem001"
   },
@@ -10,7 +10,7 @@
   {
     "file": "experiments/randomStars.js",
     "name": "Generative Art",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "description": "The main idea behind this artwork is to generate a visually appealing composition of stars with random positions, shapes, and colors on a canvas. The purpose of this code is to demonstrate the creative possibilities of generative art",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/cystem001"
   },
@@ -18,15 +18,15 @@
   {
     "file": "experiments/randStarUpgrade.js",
     "name": "Upgraded Generative Art",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "description": "Upgraded my random star generative art to become more aesthetically pleasing",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/cystem001"
   },
 
   {
     "file": "experiments/floatingShapes.js",
-    "name": "ToneJs Generative Art",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "name": "ToneJs Interactive Art",
+    "description": "This is a toneJS try that plays sounds on mouse click",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/cystem001"
   },
@@ -34,7 +34,7 @@
   {
     "file": "experiments/floatShapeUpgrade.js",
     "name": "Upgraded ToneJS Generative Art",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "description": "Updated my toneJS art making the generated art only hover around a confined area",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/cystem001"
   },
@@ -42,7 +42,7 @@
   {
     "file": "experiments/wavyTry.js",
     "name": "Generative Art 2",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "description": "Made a new interactive generative art that stimulates falling raindrops which also creates an ocean-like effect creating a visual representation of a rainy day. as the raindrops hit the bottom, the water level rises gradually with a wavy motion and clears the water level on click.",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/cystem001"
   }
